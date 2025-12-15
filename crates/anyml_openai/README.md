@@ -1,6 +1,6 @@
-# AnyML OpenAI
+# Anyml OpenAI
 
-An API wrapper for interacting with OpenAI via AnyML.
+An API wrapper for interacting with OpenAI via Anyml.
 
 Does not enforce a specific async runtime or http library via the [anyhttp](https://github.com/quaero-search/anyhttp) crate.
 

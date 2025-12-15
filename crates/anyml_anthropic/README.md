@@ -1,6 +1,6 @@
-# AnyML Anhropic
+# Anyml Anhropic
 
-An API wrapper for interacting with Anthropic via AnyML.
+An API wrapper for interacting with Anthropic via Anyml.
 
 Does not enforce a specific async runtime or http library via the [anyhttp](https://github.com/quaero-search/anyhttp) crate.
 

@@ -1,16 +1,3 @@
-# Anyml
-
-Dyn-compatible traits which provide a unified API for asynchronously interacting with machine learning inference providers.
-
-Crates for different providers can be found here:
-
-anyml_ollama](crates/anyml_anthropic)
-[anyml_ollama](crates/anyml_ollama)
-anyml_ollama](crates/anyml_openai)
-
-## Example
-
-```rs
 use anyhttp_reqwest::ReqwestClientWrapper;
 use anyml::{AnthropicProvider, ChatOptions, ChatProvider};
 use futures::StreamExt;
@@ -47,5 +34,3 @@ fn init_config() -> anyhow::Result<Config> {
         chat_provider: Box::new(anthropic),
     })
 }
-
-```

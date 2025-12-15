@@ -1,6 +1,6 @@
-# AnyML Ollama
+# Anyml Ollama
 
-An API wrapper for interacting with Ollama via AnyML.
+An API wrapper for interacting with Ollama via Anyml.
 
 Does not enforce a specific async runtime or http library via the [anyhttp](https://github.com/quaero-search/anyhttp) crate.
 
