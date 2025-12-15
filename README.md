@@ -4,7 +4,7 @@ Dyn-compatible traits which provide a unified API for asynchronously interacting
 
 Crates for different providers can be found here:
 
-anyml_ollama](crates/anyml_anthropic)
+[anyml_ollama](crates/anyml_anthropic)
 [anyml_ollama](crates/anyml_ollama)
 anyml_ollama](crates/anyml_openai)
 
