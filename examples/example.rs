@@ -11,7 +11,7 @@ struct Config {
 async fn main() {
     let config = init_config().unwrap();
 
-    let options = ChatOptions::new("claude-3-haiku-20240307");
+    let options = ChatOptions::new("claude-3-haiku-20240307").messages(&["Hello chatbot".into()]);
 
     let response = config.chat_provider.chat(&options).await.unwrap();
 

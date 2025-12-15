@@ -21,15 +21,12 @@ use anyml::{AnthropicProvider, ChatOptions, ChatProvider};
 use futures::StreamExt;
 use tokio::io::{AsyncWriteExt, stdout};
 
-struct Config {
-    chat_provider: Box<dyn ChatProvider>,
-}
-
 #[tokio::main]
 async fn main() {
     let config = init_config().unwrap();
 
-    let options = ChatOptions::new("claude-3-haiku-20240307");
+    let options = ChatOptions::new("claude-3-haiku-20240307")
+        .messages(&["Hello chatbot".into()]);
 
     let mut response = config.chat_provider.chat(&options).await.unwrap();
 
@@ -38,6 +35,10 @@ async fn main() {
         out.write_all(chunk.content.as_bytes()).await.unwrap();
         out.flush().await.unwrap();
     }
+}
+
+struct Config {
+    chat_provider: Box<dyn ChatProvider>,
 }
 
 fn init_config() -> anyhow::Result<Config> {
