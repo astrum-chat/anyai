@@ -1,5 +1,8 @@
 pub mod models;
 pub mod providers;
 
-pub use providers::{ProviderTrait, ChatProvider, ListModelsProvider, ChatOptions, ChatResponse, ChatChunk, ChatError, ChatStreamError, ListModelsError};
-pub use models::{Model, Message, MessageRole};
+pub use models::{Message, MessageRole, Model};
+pub use providers::{
+    ChatChunk, ChatError, ChatOptions, ChatProvider, ChatResponse, ChatStreamError,
+    ListModelsError, ListModelsProvider,
+};
